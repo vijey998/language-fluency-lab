@@ -1,0 +1,3 @@
+using System.Collections.Immutable;using Scheduler.Core;
+if(args is not ["demo"]){Console.Error.WriteLine("usage: dotnet run -- demo");return 2;}
+var fetch=new WorkTask("fetch","Fetch",80);var clean=new WorkTask("clean","Clean",70,Dependencies:["fetch"]);var train=new WorkTask("train","Train",90,"gpu",Dependencies:["clean"]);var catalog=new TaskCatalog([fetch,clean,train]);var handler=new DelegateTaskHandler((t,_)=>(Console.WriteLine($"running {t.Id}"),Task.CompletedTask).Item2);var engine=new SchedulerEngine(catalog,[handler]);var done=await engine.RunAsync([new Worker("local",["cpu","gpu"])]);Console.WriteLine($"{done.Count} completed");return 0;
