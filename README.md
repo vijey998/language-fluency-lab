@@ -126,3 +126,7 @@ This is not production Kubernetes wearing a fake moustache. It is intentionally 
 ## Practice methodology
 
 The [AI-assisted practice methodology](docs/AI_WORKFLOW.md) defines how independent attempts, AI hints, tests, and practice metrics fit together.
+
+## License
+
+This project is available under the [MIT License](LICENSE).
