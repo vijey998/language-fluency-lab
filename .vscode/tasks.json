@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Format: entire repository",
+      "type": "shell",
+      "command": "bash scripts/format_all.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Check formatting",
+      "type": "shell",
+      "command": "bash scripts/check_format.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test: all available languages",
+      "type": "shell",
+      "command": "bash scripts/smoke_test.sh",
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "xaver.clang-format",
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.csdevkit",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    "editorconfig.editorconfig"
+  ]
+}

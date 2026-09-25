@@ -1,0 +1,41 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.rulers": [100],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "cmake.configureOnOpen": false,
+  "C_Cpp.clang_format_style": "file",
+  "clang-format.style": "file",
+  "python.analysis.typeCheckingMode": "strict",
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": false
+  }
+}
